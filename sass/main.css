@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: black;
+}
+body #header {
+  top: 0;
+  z-index: 999999;
+  position: -webkit-sticky;
+  position: sticky;
+}
+body #header .header__informacion {
+  display: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: black;
+  color: grey;
+  list-style: none;
+  z-index: 9999;
+}
+body #header .cantidadCarrito {
+  display: none;
+}
+@media (min-width: 992px) {
+  body #header .header__informacion {
+    display: block;
+  }
+  body #header .cantidadCarrito {
+    display: block;
+  }
+}
+body #header .header__menu {
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+body #header .header__menu .header__menu__logo {
+  height: 45px;
+}
+body #header .header__menu a {
+  text-decoration: none;
+  color: white;
+}
+body #header .header__menu .avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body #header .header__menu p {
+  padding: 5px;
+  color: white;
+  font-size: 30px;
+}
+body #contenedorProductos h2 {
+  padding: 10px;
+  color: white;
+  font-family: sans-serif;
+}
+body #contenedorProductos h4 {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+}
+body #contenedorProductos h5 {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+body #contenedorProductos p {
+  height: 100px;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body #contenedorProductos img {
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body #contenedorProductos .col a {
+  padding-bottom: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: orangeRed;
+}
+body #separador {
+  background-color: orangeRed;
+  height: 10px;
+}
+body #contenedorCarrito h2 {
+  padding-top: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+body #contenedorCarrito h3 {
+  margin-top: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+body #contenedorCarrito h4 {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+}
+body #contenedorCarrito h5 {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+body #contenedorCarrito p {
+  height: 100px;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body #contenedorCarrito img {
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body #contenedorCarrito .col a {
+  padding-bottom: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: orangeRed;
+}
+body #contenedorCarrito .cantidad {
+  margin-top: 10px;
+}
+body #footer {
+  background-color: white;
+  text-align: center;
+  color: gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body #footer .redessociales {
+  display: inline;
+}
+body #footer .redessociales a {
+  color: gray;
+}
+body #footer .redessociales a:hover {
+  color: orangeRed;
+}
+body #footer .redessociales i {
+  padding-inline: 5px;
+}
+
+.botones {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: orangeRed;
+  color: white;
+  font-family: sans-serif;
+}
+.botones:hover {
+  background-color: grey !important;
+  color: orangered !important;
+}
+
+.botones2 {
+  margin-top: 10px;
+  background-color: orangeRed;
+  color: white;
+  font-family: sans-serif;
+}
+.botones2:hover {
+  background-color: grey !important;
+  color: orangered !important;
+}
+
+.botones3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(26, 214, 26);
+  color: white;
+  font-family: sans-serif;
+}
+.botones3:hover {
+  background-color: white !important;
+  color: rgb(26, 214, 26) !important;
+}
+
+.titulos {
+  color: orangeRed;
+}/*# sourceMappingURL=main.css.map */

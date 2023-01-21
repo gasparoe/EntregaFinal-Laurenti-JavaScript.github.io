@@ -1,0 +1,120 @@
+<!-- ENTREGA FINAL LAURENTI GASPAR
+CARRITO DE COMPRAS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiendaCoder | Tu tienda internacional de confianza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc3be69b64.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container-fluid text-center pt-3 pb-1 header__informacion">
+            <div class="row">
+                <div class="col">
+                    <p>Bienvenido a TIENDACODER - Tu tienda internacional de confianza</p>
+                </div>
+            </div>
+
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark header__menu">
+            <div class="container-fluid">
+                <a class="navbar-brand p-2" href="./index.html"><img class="header__menu__logo" src="./assets/logo.png"
+                        alt="logo_menu"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                    <a href="#separador">
+                        <i class="fa-solid fa-cart-shopping fa-2x" id="btnVerCarrito"></i>
+                    </a>
+                    <span class="cantidadCarrito">
+                        <p id="cantidadCarrito"></p>
+                    </span>
+                    <p id="cantidadCarrito"></p>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="contenedorProductos">
+        <div class="container-fluid text-center p-4">
+            <div id="cardProductos" class="row">
+
+            </div>
+
+        </div>
+    </section>
+
+    <div id="separador"></div>
+
+    <section id="contenedorCarrito">
+        <h2 id="tituloCarrito">Carrito de Compras</h2>
+        <h3>El total de la compra es de $<span id="costoTotal">0</span></h3>
+        <div class="container-fluid text-center p-4">
+            <div id="cardCarrito" class="row">
+
+            </div>
+
+            <button type="button" class="btn botones" id="btnVaciarCarrito">VACIAR CARRITO</button>
+            <button type="button" class="btn botones3" id="btnComprar">COMPRAR</button>
+
+
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div>
+            <div class="redessociales">
+                <a href="" target="_blank"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+
+            </div>
+            <h2>2022 by TiendaCoder S.A</h2>
+            <p>Todos los derechos reservados ©</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

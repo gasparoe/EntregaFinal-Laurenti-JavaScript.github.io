@@ -1,0 +1,42 @@
+// CLASES GENERALES
+.botones {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: $colorPrincipal;
+    color: white;
+    font-family: sans-serif;
+    &:hover{
+        background-color: grey !important;
+        color: orangered !important;
+    }
+}
+
+.botones2 {
+    margin-top: 10px;
+    background-color: $colorPrincipal;
+    color: white;
+    font-family: sans-serif;
+    &:hover{
+        background-color: grey !important;
+        color: orangered !important;
+    }
+}
+
+.botones3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(26, 214, 26);
+    color: white;
+    font-family: sans-serif;
+    &:hover{
+        background-color: white !important;
+        color: rgb(26, 214, 26) !important;
+    }
+}
+
+
+.titulos {
+    color: $colorPrincipal;
+}
+
+
